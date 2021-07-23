@@ -4,10 +4,12 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="reservia.css" />
         <title>Reservia</title>
+        <script src="https://kit.fontawesome.com/b2b97c6fd7.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
     <div id="bloc_page">
+
         <header>    
             <div id="logo_Reservia">
                 <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia">
@@ -15,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a href="#Hébergements">Hébergements</a></li>
-                    <li><a href="#Activités">#Activités</a></li>
+                    <li><a href="#Activités">Activités</a></li>
                     <li><a href="#Inscription.html">S'inscrire</a></li>
                 </ul>
             </nav>
@@ -24,11 +26,38 @@
         <div id="Recherche">
             <h1 id="hébergement">Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2 id="nature">En plein centre ville ou en pleine nature</h2>
-            <form action="post"></form>
+            <form method="post" action="traitement.php">
+                <p>
+                   <label for="ville"><i class="fas fa-map-marker-alt"></i></label> <input type="text" name="ville" id="ville" 
+                   value="Marseille, France">
+                   <input type="submit" value="Rechercher" />
+                </p>
+            </form>
 
-
-
+            <div id="Filtres">
+                <div id="Text_filtres">
+                    <p>Filtres</p>
+                </div>
+                <div id="Economique">
+                     <i class="fas fa-money-bill-wave"></i>
+                    <p>Économique</p>
+                </div>
+                <div id="Familial">
+                    <i class="fas fa-heart"></i>
+                    <p>Familial</p>
+                </div>
+                <div id="Romantique">
+                    <i class="fas fa-heart"></i>
+                    <p>Romantique</p>
+                </div>
+                <div id="Animaux">
+                    <i class="fas fa-dog"></i>
+                    <p>Animaux autorisés</p>
+                </div>
+            </div>
         </div>
+
+
         
 
 
