@@ -1,0 +1,112 @@
+body 
+{
+   font-family: 'raleway', 'Trebuchet MS', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'ralewaythin_italic';
+    src: url('polices/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('polices/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('polices/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('polices/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+#bloc_page
+{
+    margin: auto;
+    width: 95%;
+}
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#logo 
+{
+   max-width: 30%;
+}
+
+#nav_top
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#nav_top a
+{
+    margin-right: 3em;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#puce1
+{
+    color:#0065FC;
+    font-weight: lighter;
+}
+
+#puce2
+{
+    font-weight: 600;
+}
+
+#puce3
+{
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+#Recherche
+{
+   
+    display: flex;
+    flex-direction: column;
+}
+
+#Recherche h1
+{
+    font-size: 1.2em;
+}
+
+#Filtres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+}
+
+#Filtres p
+{
+    margin-right: 3em;
+    margin-left: 1.5em;
+}
+
+.bouton_filtres
+{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   border-radius: 5px;
+   border-top-left-radius: 5em;
+   border-top-right-radius: 5em;
+   border-bottom-left-radius: 5em;
+   border-bottom-right-radius: 5em;
+   border-style: solid;
+   border-color: #F2F2F2;
+   margin-right: 2em;
+}
