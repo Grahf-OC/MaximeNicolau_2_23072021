@@ -102,11 +102,34 @@ header
    flex-direction: row;
    align-items: center;
    border-radius: 5px;
-   border-top-left-radius: 5em;
-   border-top-right-radius: 5em;
-   border-bottom-left-radius: 5em;
-   border-bottom-right-radius: 5em;
+   border-top-left-radius: 3em;
+   border-top-right-radius: 3em;
+   border-bottom-left-radius: 3em;
+   border-bottom-right-radius: 3em;
    border-style: solid;
    border-color: #F2F2F2;
    margin-right: 2em;
+}
+
+.fa-money-bill-wave
+{
+    color: #0065FC;
+}
+
+.fa-child
+{
+    color:#0065FC;
+    
+}
+
+.fa-heart
+{
+    color:#0065FC;
+    
+}
+
+.fa-dog
+{
+    color:#0065FC;
+    
 }
