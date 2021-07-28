@@ -1,135 +1,202 @@
 body 
 {
-   font-family: 'raleway', 'Trebuchet MS', Arial, sans-serif;
+   font-family: 'Raleway', sans-serif;
 }
 
-@font-face {
-    font-family: 'ralewaythin_italic';
-    src: url('polices/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('polices/raleway-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('polices/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('polices/raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-#bloc_page
+*
 {
-    margin: auto;
-    width: 95%;
+    box-sizing: border-box;
 }
+
+.bloc_page
+{
+    width: 95%;
+    margin: auto;
+}
+
+/***************Header***************/
 
 header 
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
-#logo 
+.logo 
 {
-   max-width: 30%;
+   width: 120px;
+   height: auto;
 }
 
-#nav_top
+.nav_links
 {
-    list-style-type: none;
     display: flex;
+    list-style: none;
+    justify-content: flex-start;
 }
 
-#nav_top a
+.nav_links a
 {
-    margin-right: 3em;
     text-decoration: none;
     font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 30px;
 }
 
-#puce1
+.puce1
 {
     color:#0065FC;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
-#puce2
+.puce2
 {
-    font-weight: 600;
+    font-weight: 300;
+    color: black;
 }
 
-#puce3
+.puce3
 {
     color: #0065FC;
     font-weight: bolder;
 }
 
-#Recherche
+/******************Main****************/
+
+/****************Recherche*************/
+
+.recherche
 {
-   
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-#Recherche h1
+.recherche h1
 {
-    font-size: 1.2em;
+    display: flex;
+    font-size: 1.4em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
 }
 
-#Filtres
+.nature
+{
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.recherche_ensemble
+{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.recherche_icone
+{
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 14px 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.recherche_champ
+{
+    border: 1px solid #F2F2F2; 
+    padding: 14px 12px;
+    margin-right: 0;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.recherche_bouton
+{
+    background-color: #0065FC;
+    color: white;
+    padding: 15px 12px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-width: 0;
+    font-size: 17px;
+}
+
+
+/**********Filtres********/
+
+.filtres
 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-   
 }
 
-#Filtres p
+.filtres p
 {
-    margin-right: 3em;
-    margin-left: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 14px 10px;
 }
 
 .bouton_filtres
 {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   border-radius: 5px;
-   border-top-left-radius: 3em;
-   border-top-right-radius: 3em;
-   border-bottom-left-radius: 3em;
-   border-bottom-right-radius: 3em;
-   border-style: solid;
-   border-color: #F2F2F2;
-   margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    margin-right: 1.5em;
 }
 
-.fa-money-bill-wave
+.bouton_filtres i
 {
+    background-color:#DEEBFF;
+    border-radius: 100%;
+    text-align: center;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+}
+
+.bouton_filtres p
+{
+    margin: 1px 20px;
+    font-size: 18px;
+}
+
+.bottom_filtres
+{
+    display: flex;
+    align-items: center;
+}
+
+/*****************Font Awesome****************/ 
+
+.icon
+{
+    color:#0065FC;
+}
+
+.fa_infobulle
+{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    background-color: white;
     color: #0065FC;
+    border-radius: 100%;
+    padding: 2px;
+    font-size: 0.8em;
+    text-align: center;
+    vertical-align: center;
+    margin-right: 10px;
 }
 
-.fa-child
-{
-    color:#0065FC;
-    
-}
-
-.fa-heart
-{
-    color:#0065FC;
-    
-}
-
-.fa-dog
-{
-    color:#0065FC;
-    
-}
