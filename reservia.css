@@ -8,13 +8,20 @@ body
     box-sizing: border-box;
 }
 
+p
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+
 .bloc_page
 {
     width: 95%;
     margin: auto;
 }
 
-/***************Header***************/
+/************************************************Header*********************************************/
 
 header 
 {
@@ -41,7 +48,7 @@ header
     text-decoration: none;
     font-size: 1.1em;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 15px 10px 50px;
 }
 
 .puce1
@@ -62,9 +69,9 @@ header
     font-weight: bolder;
 }
 
-/******************Main****************/
+/***********************************************************************Main*****************************************/
 
-/****************Recherche*************/
+/**************************************Recherche**********************************/
 
 .recherche
 {
@@ -128,7 +135,7 @@ header
 }
 
 
-/**********Filtres********/
+/*****************************************Filtres**********************************/
 
 .filtres
 {
@@ -176,9 +183,11 @@ header
 {
     display: flex;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-/*****************Font Awesome****************/ 
+/************************************Font Awesome*****************************************/ 
 
 .icon
 {
@@ -187,16 +196,150 @@ header
 
 .fa_infobulle
 {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 2px solid #F2F2F2;
     background-color: white;
     color: #0065FC;
     border-radius: 100%;
-    padding: 2px;
+    padding: 4px;
     font-size: 0.8em;
     text-align: center;
     vertical-align: center;
     margin-right: 10px;
 }
 
+/*************************************************Section*******************************************/
+
+
+section
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hebergements
+{
+    width: 68%;
+    background-color: #F2F2F2;
+    margin-right: 40px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.hebergements h1
+{
+    margin: 15px;
+    font-weight: bold;
+}
+
+.results
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.result
+{
+    width: 260px;
+    height: 200px;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 7px 3px 3px rgb(175, 175, 175);
+    
+}
+
+.hebergements_nom
+{
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+}
+
+.prix
+{
+    margin: 0px;
+}
+
+.notation
+{
+    margin: 1px 3px 5px 3px;
+}
+
+.result img
+{
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.result a
+{
+    text-decoration: none;
+}
+
+/*********************************************Aside************************************/
+
+aside
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.result_aside
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    flex-wrap: nowrap;
+    background-color: white;
+    box-shadow: 7px 3px 3px rgb(175, 175, 175);
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.result_flex
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.result_aside a
+{
+    text-decoration: none;
+}
+
+aside img
+{
+    min-height: 130px;
+    max-height: 150px;
+    max-width: 160px;
+    
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/********************************Footer**********************************/
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+}
