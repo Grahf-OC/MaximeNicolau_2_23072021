@@ -17,7 +17,7 @@ p
 
 .bloc_page
 {
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 
@@ -28,6 +28,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0% 2.5%;
 }
 
 .logo 
@@ -48,7 +49,7 @@ header
     text-decoration: none;
     font-size: 1.1em;
     display: inline-block;
-    padding: 10px 15px 10px 50px;
+    padding: 10px 15px 10px 35px;
 }
 
 .puce1
@@ -59,7 +60,7 @@ header
 
 .puce2
 {
-    font-weight: 300;
+    font-weight: 500;
     color: black;
 }
 
@@ -78,7 +79,7 @@ header
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin: 0% 2.5% 2% 2.5%;
 }
 
 .recherche h1
@@ -142,13 +143,16 @@ header
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
+    margin: 0% 2.5%;
+
 }
 
 .filtres p
 {
     font-weight: bold;
     font-size: 18px;
-    margin: 14px 10px;
+    margin: 1px 25px 1px 0px;
 }
 
 .bouton_filtres
@@ -167,16 +171,17 @@ header
     background-color:#DEEBFF;
     border-radius: 100%;
     text-align: center;
-    padding: 12px;
-    width: 50px;
-    height: 50px;
-    font-size: 22px;
+    padding: 13px 18px 11px 12px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
 }
 
 .bouton_filtres p
 {
-    margin: 1px 20px;
-    font-size: 18px;
+    margin: 1px 16px;
+    font-size: 16px;
+    font-weight: 800;
 }
 
 .bottom_filtres
@@ -184,6 +189,7 @@ header
     display: flex;
     align-items: center;
     margin-top: 10px;
+    margin-left: 2.5%;
     margin-bottom: 20px;
 }
 
@@ -209,6 +215,11 @@ header
     margin-right: 10px;
 }
 
+.far
+{
+    color: #F2F2F2;
+}
+
 /*************************************************Section*******************************************/
 
 
@@ -216,7 +227,9 @@ section
 {
     display: flex;
     justify-content: flex-start;
+    margin: 0% 2.5%;
 }
+
 
 .hebergements
 {
@@ -251,24 +264,24 @@ section
     margin: 10px;
     border-radius: 20px;
     padding: 5px;
-    box-shadow: 7px 3px 3px rgb(175, 175, 175);
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
     
 }
 
 .hebergements_nom
 {
     font-weight: bold;
-    margin: 10px 0px 0px 0px;
+    margin: 5px;
 }
 
 .prix
 {
-    margin: 0px;
+    margin: 0px 5px;
 }
 
 .notation
 {
-    margin: 1px 3px 5px 3px;
+    margin: 0px 5px;
 }
 
 .result img
@@ -285,6 +298,13 @@ section
     text-decoration: none;
 }
 
+.afficher
+{
+    margin: 15px;
+    font-weight: 700;
+}
+
+
 /*********************************************Aside************************************/
 
 aside
@@ -297,6 +317,12 @@ aside
     padding: 10px;
 }
 
+aside h1
+{
+    font-size: 1.5em;
+    margin: 5% 5% 4% 5%;
+}
+
 .result_aside
 {
     width: 90%;
@@ -305,9 +331,10 @@ aside
     justify-content: flex-start ;
     flex-wrap: nowrap;
     background-color: white;
-    box-shadow: 7px 3px 3px rgb(175, 175, 175);
-    margin: 5px;
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    margin: 5px auto 10px auto;
     border-radius: 20px;
+    align-items: center;
 }
 
 .result_flex
@@ -318,7 +345,12 @@ aside
     background-color: white;
     margin: 10px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
+}
+
+.text_bloc
+{
+    font-weight: 600;
 }
 
 .result_aside a
@@ -326,20 +358,177 @@ aside
     text-decoration: none;
 }
 
+
 aside img
 {
-    min-height: 130px;
+    min-height: 140px;
     max-height: 150px;
-    max-width: 160px;
-    
+    width: 140px;
+    object-fit: cover;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
 }
 
-/********************************Footer**********************************/
+/***************************************Activités********************************************/
 
-footer
+#activites
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#activites h1
+{
+    margin: 15px;
+}
+
+.activites 
 {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+.activites h3
+{
+    font-size: 16px;
+    padding: 2px 5px 10px 15px;
+}
+
+
+.activites a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.activites img
+{
+    border-radius: 20px 20px 0px 0px;
+    width: 280px;
+}
+
+.vieux_port 
+{
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    border-radius: 20px;
+}
+
+.vieux_port img
+{
+    
+    height: 340px;
+    object-fit: cover;
+}
+
+.fort_frioul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fort
+{
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    border-radius: 20px;
+}
+
+.fort img
+
+{
+    height: 160px;
+    object-fit: cover;
+}
+
+.frioul
+{
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    border-radius: 20px;
+}
+
+.frioul img
+{
+    height: 130px;
+    object-fit: cover;
+}
+
+.calanques
+{
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    border-radius: 20px;
+}
+
+.calanques img
+{
+    height: 340px;
+    object-fit: cover;
+}
+
+.dame
+{
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    border-radius: 20px;
+}
+
+.dame img
+{
+    height: 145px;
+    object-fit: cover;
+}
+
+.parc
+{
+    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    border-radius: 20px;
+}
+
+.parc img
+{
+    height: 145px;
+    object-fit: cover;
+}
+
+
+
+/*****************************************************Footer**********************************************************/
+
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    margin: 20px 0px 0px 0px;
+}
+
+footer ul
+{
+    list-style: none;
+    padding: 5px 5px 3px 0px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer li
+{
+    padding: 5px 0px;
+}
+
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.foot_nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    margin-right: 200px;
 }
