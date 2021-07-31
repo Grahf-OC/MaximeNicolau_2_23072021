@@ -37,6 +37,11 @@ header
    height: auto;
 }
 
+.logo:hover
+{
+    transform: scale(1.05);
+}
+
 .nav_links
 {
     display: flex;
@@ -47,9 +52,15 @@ header
 .nav_links a
 {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 18px;
     display: inline-block;
-    padding: 10px 15px 10px 35px;
+    padding: 10px 15px 0px 35px;
+}
+
+.nav_links a:hover
+{
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 .puce1
@@ -135,6 +146,11 @@ header
     font-size: 17px;
 }
 
+.recherche_bouton:hover
+{
+    transform: scale(1.05);
+}
+
 
 /*****************************************Filtres**********************************/
 
@@ -155,6 +171,12 @@ header
     margin: 1px 25px 1px 0px;
 }
 
+.bouton_filtres:hover
+{
+    background-color: #DEEBFF;
+    transform: scale(1.05);
+}
+
 .bouton_filtres
 {
     display: flex;
@@ -165,6 +187,7 @@ header
     border-color: #F2F2F2;
     margin-right: 1.5em;
 }
+
 
 .bouton_filtres i
 {
@@ -215,9 +238,9 @@ header
     margin-right: 10px;
 }
 
-.far
+.grey
 {
-    color: #F2F2F2;
+    color: #ebe6e6e0;
 }
 
 /*************************************************Section*******************************************/
@@ -228,6 +251,11 @@ section
     display: flex;
     justify-content: flex-start;
     margin: 0% 2.5%;
+}
+
+section p
+{
+    color: black;
 }
 
 
@@ -264,8 +292,13 @@ section
     margin: 10px;
     border-radius: 20px;
     padding: 5px;
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    box-shadow: 2px 2px 6px 2px rgb(175, 175, 175);
     
+}
+
+.result:hover
+{
+    transform: scale(1.05);
 }
 
 .hebergements_nom
@@ -277,11 +310,13 @@ section
 .prix
 {
     margin: 0px 5px;
+    font-size: 14px;
+    padding-bottom: 5px;
 }
 
 .notation
 {
-    margin: 0px 5px;
+    margin: 0px 5px 5px 5px;
 }
 
 .result img
@@ -304,6 +339,12 @@ section
     font-weight: 700;
 }
 
+#afficher
+{
+    text-decoration: none;
+}
+
+
 
 /*********************************************Aside************************************/
 
@@ -321,31 +362,31 @@ aside h1
 {
     font-size: 1.5em;
     margin: 5% 5% 4% 5%;
+    font-weight: 800;
 }
 
 .result_aside
 {
     width: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start ;
     flex-wrap: nowrap;
     background-color: white;
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
+    box-shadow: 2px 2px 6px 2px rgb(175, 175, 175);
     margin: 5px auto 10px auto;
     border-radius: 20px;
-    align-items: center;
+}
+
+.result_aside:hover
+{
+    transform: scale(1.05);
 }
 
 .result_flex
 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: white;
-    margin: 10px;
-    border-radius: 20px;
-    padding: 10px;
+    height: 100%;
+    justify-content: space-around;
 }
 
 .text_bloc
@@ -383,6 +424,20 @@ aside img
     margin: 15px;
 }
 
+.populaire
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fleche
+{
+    font-size: 18px;
+    padding-right: 20px;
+    
+}
+
 .activites 
 {
     display: flex;
@@ -403,16 +458,21 @@ aside img
     color: black;
 }
 
+.acti
+{
+    box-shadow: 2px 2px 6px 2px rgb(175, 175, 175);
+    border-radius: 20px;
+}
+
+.acti:hover
+{
+    transform: scale(1.05);
+}
+
 .activites img
 {
     border-radius: 20px 20px 0px 0px;
     width: 280px;
-}
-
-.vieux_port 
-{
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
-    border-radius: 20px;
 }
 
 .vieux_port img
@@ -428,11 +488,7 @@ aside img
     flex-direction: column;
     justify-content: space-between;
 }
-.fort
-{
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
-    border-radius: 20px;
-}
+
 
 .fort img
 
@@ -441,22 +497,10 @@ aside img
     object-fit: cover;
 }
 
-.frioul
-{
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
-    border-radius: 20px;
-}
-
 .frioul img
 {
     height: 130px;
     object-fit: cover;
-}
-
-.calanques
-{
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
-    border-radius: 20px;
 }
 
 .calanques img
@@ -465,22 +509,10 @@ aside img
     object-fit: cover;
 }
 
-.dame
-{
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
-    border-radius: 20px;
-}
-
 .dame img
 {
     height: 145px;
     object-fit: cover;
-}
-
-.parc
-{
-    box-shadow: 3px 3px 6px 3px rgb(175, 175, 175);
-    border-radius: 20px;
 }
 
 .parc img
@@ -500,6 +532,7 @@ footer
     justify-content: flex-start;
     background-color: #F2F2F2;
     margin: 20px 0px 0px 0px;
+    padding: 10px 0px 40px 40px;
 }
 
 footer ul
@@ -509,6 +542,7 @@ footer ul
     margin: 0;
     font-size: 16px;
     font-weight: 500;
+    padding-right: 30px;
 }
 
 footer li
