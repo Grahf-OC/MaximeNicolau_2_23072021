@@ -19,10 +19,18 @@ p
 a
 {
     text-decoration: none;
+    color: inherit;
 }
 
+ul
+{
+    margin: 0;
+    padding: 0;
+}
 
-/************************************************Header*********************************************/
+/***********************************************************Desktop****************************************************************************/
+
+/**************************************Header*************************************/
 
 header 
 {
@@ -33,13 +41,13 @@ header
     margin-left: 2.5%;
 }
 
-.logo 
+.logo_container
 {
    width: 120px;
    padding-top: 25px;
 }
 
-.logo:hover
+.logo_container:hover
 {
     transform: scale(1.05);
 }
@@ -48,6 +56,7 @@ nav
 {
     border: 1px solid transparent;
     padding-top: 25px;
+    padding-left: 710px;
 }
 
 
@@ -57,15 +66,15 @@ nav ul
     list-style: none;
 }
 
-nav a
+nav ul li a
 {
     font-size: 18px;
-    padding: 41px 25px 0px 25px;
+    padding: 36px 25px 0px 25px;
     font-weight: 500;
     color: black;
 }
 
-nav a:hover
+nav ul li a:hover
 {
     border-top: 3px solid #0065FC;
     color: #0065FC;
@@ -73,13 +82,22 @@ nav a:hover
 
 .puce3
 {
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 25px;
     color: #0065FC;
-    font-weight: bolder;
 }
 
-/***********************************************************************Main*****************************************/
+.puce3:hover
+{
+    text-decoration: underline 1px;
+    transform: scale(1.05);
+}
 
-/**************************************Recherche**********************************/
+/*********************************************************Main*****************************************/
+
+/*****************************Recherche**********************************/
 
 .recherche
 {
@@ -149,7 +167,7 @@ nav a:hover
 }
 
 
-/*****************************************Filtres**********************************/
+/**********************************Filtres**********************************/
 
 .filtres
 {
@@ -214,7 +232,7 @@ nav a:hover
     margin: 30px 0 30px 2.5%;
 }
 
-/************************************Font Awesome*****************************************/ 
+/******************************Font Awesome*************************************/ 
 
 .icon
 {
@@ -241,7 +259,7 @@ nav a:hover
     color: #ebe6e6e0;
 }
 
-/*************************************************Section*******************************************/
+/*****************************************Section**********************************/
 
 
 section
@@ -265,9 +283,8 @@ section p
     border-radius: 20px;
 }
 
-.hebergements h1
+.hebergements_nom
 {
-    margin: 15px;
     font-weight: bold;
 }
 
@@ -280,50 +297,27 @@ section p
 
 .result
 {
-    width: 260px;
-    height: 200px;   
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 30%;   
     background-color: white;
     margin: 10px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 4px;
     box-shadow: 2px 2px 6px 2px rgb(175, 175, 175);
+}
+
+.result img
+{
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .result:hover
 {
     transform: scale(1.05);
 }
-
-.hebergements_nom
-{
-    font-weight: bold;
-    margin: 5px;
-}
-
-.prix
-{
-    margin: 0px 5px;
-    font-size: 14px;
-    padding-bottom: 5px;
-}
-
-.notation
-{
-    margin: 0px 5px 5px 5px;
-}
-
-.result img
-{
-    width: 250px;
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 
 .afficher
 {
@@ -332,12 +326,11 @@ section p
 }
 
 
-
-/*********************************************Aside************************************/
+/************************************Aside************************************/
 
 aside
 {
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -373,14 +366,14 @@ aside a:hover
     font-weight: 600;
 }
 
-
 .result_flex
 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    line-height: 1.5em;
+    padding: 8px;
 }
-
 
 aside img
 {
@@ -391,7 +384,7 @@ aside img
     border-radius: 20px 0px 0px 20px;
 }
 
-/***************************************Activités********************************************/
+/******************************Activités************************************/
 
 #activites
 {
@@ -415,15 +408,13 @@ aside img
 .fleche
 {
     font-size: 18px;
-    padding-right: 20px;
-    
+    padding-right: 20px;  
 }
 
 .activites 
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .activites h3
@@ -500,7 +491,7 @@ aside img
     object-fit: cover;
 }
 
-/*****************************************************Footer**********************************************************/
+/***********************************Footer********************************/
 
 footer
 {
@@ -540,3 +531,190 @@ footer a
     padding: 5px;
     margin-right: 200px;
 }
+
+/*********************************************************************Mobile****************************************************************/
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+
+header
+{
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+}
+
+.logo_container
+{
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 25px 30px;
+}
+
+nav
+{
+    padding: 0;
+    width: 100%;
+    order: 2;
+}
+
+nav a, nav ul
+{
+    padding: 0;
+    width: 100%;
+}
+
+
+nav ul li 
+{
+    width: 50%;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+
+nav ul li:hover, nav ul li:focus
+{
+    color: #0065FC;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0065FC;
+    border-top: 0;
+}
+
+nav ul li a:hover, nav ul li a:focus
+{
+    border-top: 0;
+}
+
+.puce3
+{
+    padding: 0;
+    order: 1;
+    margin-left: 40px;
+}
+
+/******************************************Filtres***************************************/
+
+.filtres
+{
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.bouton_filtres
+{
+    margin-bottom: 15px;
+}
+
+
+
+/*******************************************Main******************************************************/
+
+section
+{
+    flex-direction: column;
+    width: 100%;
+}
+
+.hebergements
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    order: 2;
+    height: auto;
+    background-color: white;
+}
+
+.hebergements h1
+{
+    margin-left: 30px;
+}
+
+.result
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.result img
+{
+    height: 150px;
+}
+
+/******************************Aside****************/
+
+aside
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+aside a
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+
+.image_aside
+{
+    width: 40%;
+}
+
+aside img
+{
+    width: 100%;
+}
+
+
+/****************************Activités*********************/
+
+.activites
+{
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activites img
+{
+    width: 100%;
+    height: 170px;
+}
+
+.acti
+{
+    margin-bottom: 25px;
+}
+
+
+
+/****************************************************Footer******************************************************************/
+footer
+{
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
