@@ -28,6 +28,11 @@ ul
     padding: 0;
 }
 
+h3
+{
+    margin: 0;
+}
+
 /***********************************************************Desktop****************************************************************************/
 
 /**************************************Header*************************************/
@@ -44,7 +49,8 @@ header
 .logo_container
 {
    width: 120px;
-   padding-top: 25px;
+   padding-top: 1.7em;
+   flex-grow: 1;
 }
 
 .logo_container:hover
@@ -55,8 +61,7 @@ header
 nav
 {
     border: 1px solid transparent;
-    padding-top: 25px;
-    padding-left: 710px;
+    padding-top: 1.7em;
 }
 
 
@@ -68,8 +73,8 @@ nav ul
 
 nav ul li a
 {
-    font-size: 18px;
-    padding: 36px 25px 0px 25px;
+    font-size: 1.2em;
+    padding: 1.95em 3em 0em 0.5em;
     font-weight: 500;
     color: black;
 }
@@ -82,16 +87,15 @@ nav ul li a:hover
 
 .puce3
 {
-    padding-right: 15px;
-    font-size: 18px;
+    padding-top: 1.4em;
+    padding-right: 1.4em;
+    font-size: 1.2em;
     font-weight: 800;
-    padding-top: 25px;
     color: #0065FC;
 }
 
 .puce3:hover
 {
-    text-decoration: underline 1px;
     transform: scale(1.05);
 }
 
@@ -402,7 +406,6 @@ aside img
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .fleche
@@ -423,7 +426,6 @@ aside img
     padding: 2px 5px 10px 15px;
 }
 
-
 .activites a
 {
     color: black;
@@ -435,6 +437,11 @@ aside img
     border-radius: 20px;
 }
 
+.cont
+{
+    width: 22%
+}
+
 .acti:hover
 {
     transform: scale(1.05);
@@ -443,51 +450,51 @@ aside img
 .activites img
 {
     border-radius: 20px 20px 0px 0px;
-    width: 280px;
+    width: 100%;
 }
 
 .vieux_port img
 {
-    
-    height: 340px;
+    height: 380px;
     object-fit: cover;
 }
 
-.fort_frioul
+.fort
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 42px;
 }
-
 
 .fort img
 {
-    height: 160px;
+    height: 180px;
     object-fit: cover;
 }
 
 .frioul img
 {
-    height: 130px;
+    height: 120px;
+    object-fit: cover;
+}
+.calanques img
+{
+    height: 380px;
     object-fit: cover;
 }
 
-.calanques img
+.dame
 {
-    height: 340px;
-    object-fit: cover;
+    margin-bottom: 42px;
 }
 
 .dame img
 {
-    height: 145px;
+    height: 150px;
     object-fit: cover;
 }
 
 .parc img
 {
-    height: 145px;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -525,6 +532,7 @@ footer a
 
 .foot_nav
 {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
