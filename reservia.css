@@ -53,11 +53,6 @@ header
    flex-grow: 1;
 }
 
-.logo_container:hover
-{
-    transform: scale(1.05);
-}
-
 nav
 {
     border: 1px solid transparent;
@@ -685,9 +680,17 @@ aside img
     width: 100%;
 }
 
+.afficher
+{
+    margin: 2em;
+}
 
 /****************************Activités*********************/
 
+#activites h1
+{
+    margin: 2em;
+}
 .activites
 {
     flex-direction: column;
@@ -707,12 +710,24 @@ aside img
     margin-bottom: 25px;
 }
 
+.cont
+{
+    width: 100%;
+}
+
 
 
 /****************************************************Footer******************************************************************/
 footer
 {
     flex-direction: column;
+}
+
+.foot_nav
+{
+    width: 100%;
+    margin-bottom: 2em;
+    line-height: 1.5em;
 }
 
 }
