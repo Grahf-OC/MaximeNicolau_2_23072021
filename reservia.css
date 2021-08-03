@@ -273,6 +273,11 @@ section p
     color: black;
 }
 
+.hebergements h2
+{
+    margin-left: 1em;
+}
+
 .hebergements
 {
     width: 68%;
@@ -337,7 +342,7 @@ aside
     padding: 10px;
 }
 
-aside h1
+aside h2
 {
     font-size: 1.5em;
     margin: 5% 5% 4% 5%;
@@ -392,7 +397,7 @@ aside img
     flex-direction: column;
 }
 
-#activites h1
+#activites h2
 {
     margin: 15px;
 }
@@ -633,7 +638,7 @@ section
     background-color: white;
 }
 
-.hebergements h1
+.hebergements h2
 {
     margin-left: 30px;
 }
@@ -687,7 +692,7 @@ aside img
 
 /****************************Activités*********************/
 
-#activites h1
+#activites h2
 {
     margin: 2em;
 }
