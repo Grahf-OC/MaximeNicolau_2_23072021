@@ -43,22 +43,17 @@ header
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    margin-left: 2.5%;
+    margin: 0 2.5%;
 }
 
 .logo_container
 {
    width: 120px;
-   padding-top: 1.7em;
+   padding-top: 1.8em;
    flex-grow: 1;
 }
 
-nav
-{
-    border: 1px solid transparent;
-    padding-top: 1.7em;
-}
-
+/*********************Nav***********************/
 
 nav ul
 {
@@ -66,15 +61,16 @@ nav ul
     list-style: none;
 }
 
-nav ul li a
+nav ul li
 {
+    border: 3px solid transparent;
     font-size: 1.2em;
-    padding: 1.95em 3em 0em 0.5em;
+    padding: 1.8em 1em 1em;
     font-weight: 500;
     color: black;
 }
 
-nav ul li a:hover
+nav ul li:hover
 {
     border-top: 3px solid #0065FC;
     color: #0065FC;
@@ -82,8 +78,7 @@ nav ul li a:hover
 
 .puce3
 {
-    padding-top: 1.4em;
-    padding-right: 1.4em;
+    padding: 1.8em 1.4em 1em 1em;
     font-size: 1.2em;
     font-weight: 800;
     color: #0065FC;
@@ -165,6 +160,10 @@ nav ul li a:hover
     transform: scale(1.05);
 }
 
+.search_icon
+{
+    visibility: hidden;
+}
 
 /**********************************Filtres**********************************/
 
@@ -175,7 +174,6 @@ nav ul li a:hover
     justify-content: flex-start;
     align-items: center;
     margin: 1% 2.5%;
-
 }
 
 .filtres p
@@ -201,7 +199,6 @@ nav ul li a:hover
     border-color: #F2F2F2;
     margin-right: 1.5em;
 }
-
 
 .bouton_filtres i
 {
@@ -328,7 +325,6 @@ section p
     margin: 15px;
     font-weight: 700;
 }
-
 
 /************************************Aside************************************/
 
@@ -540,13 +536,16 @@ footer a
     margin-right: 200px;
 }
 
-/*********************************************************************Mobile****************************************************************/
+/*********************************************************************Mobile******************************************************/
 
 @media all and (max-width: 767px)
 {
 
+/****************Header_mob***************************/
+
 header
 {
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
@@ -557,22 +556,20 @@ header
 {
     order: 0;
     flex-grow: 1;
-    margin: 0px 25px 30px;
+    margin: 0px 25px 10px;
+}
+
+.puce3
+{
+    order: 1;
+    font-size: 1.5em;
 }
 
 nav
 {
-    padding: 0;
-    width: 100%;
     order: 2;
-}
-
-nav a, nav ul
-{
-    padding: 0;
     width: 100%;
 }
-
 
 nav ul li 
 {
@@ -580,7 +577,9 @@ nav ul li
     text-align: center;
     justify-content: space-around;
     padding-bottom: 10px;
-    border-bottom: 2px solid #F2F2F2;
+    font-size: 1.3em;
+    border: 0;
+    border-bottom: 2px solid #F2F2F2
 }
 
 
@@ -592,39 +591,74 @@ nav ul li:hover, nav ul li:focus
     border-top: 0;
 }
 
-nav ul li a:hover, nav ul li a:focus
+/***************************************Recherche_mob************************/
+.recherche h1
 {
-    border-top: 0;
+    margin: 5% 4%;
 }
 
-.puce3
+.nature
 {
-    padding: 0;
-    order: 1;
-    margin-left: 40px;
+    margin: 0 5% 1% 5%;
 }
 
-/******************************************Filtres***************************************/
+.recherche_ensemble
+{
+    justify-content: flex-start;
+    margin: 2em 2.5%;
+}
+
+.recherche_champ
+{
+    flex-grow: 1;
+}
+
+.recherche_bouton
+{
+    display: none;
+}
+
+.search_icon
+{
+    visibility: visible;
+    font-size: 1.2em;
+    margin-left: -1em;
+    color: white;
+    padding: 0.68em;
+    border: 2px solid #0065FC ;
+    border-radius: 30%;
+    background-color: #0065FC;
+}
+
+/******************************************Filtres_mob***************************************/
 
 .filtres
 {
     flex-wrap: wrap;
     align-items: baseline;
+    width: 95%;
+    margin: 0 5%;
 }
+
+.filtres_titre
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
 
 .bouton_filtres
 {
     margin-bottom: 15px;
 }
 
-
-
-/*******************************************Main******************************************************/
+/*******************************************Main_mob**********************************************/
 
 section
 {
     flex-direction: column;
     width: 100%;
+    margin: 0;
 }
 
 .hebergements
@@ -653,10 +687,10 @@ section
 
 .result img
 {
-    height: 150px;
+    height: 170px;
 }
 
-/******************************Aside****************/
+/******************************Aside_mob**************************/
 
 aside
 {
@@ -664,16 +698,9 @@ aside
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+    border-radius: 0;
+    padding-bottom: 30px;
 }
-
-aside a
-{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-}
-
 
 .image_aside
 {
@@ -683,18 +710,25 @@ aside a
 aside img
 {
     width: 100%;
+    height: 170px;
+}
+
+.result_flex
+{
+    width: 60%
 }
 
 .afficher
 {
-    margin: 2em;
+    margin: 1em 0 0 0.8em;
+    font-size: 1.5em;
 }
 
-/****************************Activités*********************/
+/****************************Activités_mob*********************/
 
 #activites h2
 {
-    margin: 2em;
+    margin: 1em;
 }
 .activites
 {
@@ -720,9 +754,7 @@ aside img
     width: 100%;
 }
 
-
-
-/****************************************************Footer******************************************************************/
+/***********************************************Footer_mob*****************************************/
 footer
 {
     flex-direction: column;
@@ -730,13 +762,109 @@ footer
 
 .foot_nav
 {
-    width: 100%;
+    width: 90%;
     margin-bottom: 2em;
+    margin-right: 0;
     line-height: 1.5em;
 }
 
 }
 
+/***************************************************Tablet*********************************************************************/
+
+@media (min-width: 768px) and (max-width: 1000px)
+{
+
+
+
+/*****************************Filtres******************************/
+
+.filtres
+{
+    flex-wrap: wrap;
+}
+
+.bouton_filtres
+{
+    margin: 0.5em 1em;
+}
+
+/*************************************Section_Tab*****************************/
+
+section
+{
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.hebergements
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    order: 2;
+    height: auto;
+    background-color: white;
+}
+
+.hebergements h2
+{
+    margin-left: 30px;
+}
+
+.result img
+{
+    height: 220px;
+}
+
+.result
+{
+    width: 31%;
+}
+
+/*******************************Aside_Tab*****************************/
+
+aside
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 0;
+    padding-bottom: 30px;
+}
+
+.image_aside
+{
+    width: 40%;
+}
+
+aside img
+{
+    width: 100%;
+    height: 170px;
+}
+
+.result_flex
+{
+    width: 100%
+}
+
+.afficher
+{
+    margin: 1em 0 0 0.8em;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+}
 
 
 
