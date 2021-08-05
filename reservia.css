@@ -831,6 +831,8 @@ section
 .result
 {
     width: 46%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*******************************Aside_Tab*****************************/
