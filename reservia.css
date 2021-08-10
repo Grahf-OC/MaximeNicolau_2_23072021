@@ -78,7 +78,7 @@ nav ul li:hover
 
 .puce3
 {
-    padding: 1.8em 1.4em 1em 1em;
+    padding: 1.8em 1.2em 1em 1em;
     font-size: 1.2em;
     font-weight: 800;
     color: #0065FC;
@@ -139,7 +139,7 @@ nav ul li:hover
 .recherche_champ
 {
     border: 1px solid #F2F2F2; 
-    padding: 14px 12px;
+    padding: 14px 0.5em;
     margin-right: 0;
     font-weight: 700;
     font-size: 17px;
@@ -571,7 +571,7 @@ header
 .puce3
 {
     order: 1;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 nav
@@ -595,7 +595,7 @@ nav ul li
 nav ul li:hover, nav ul li:focus
 {
     color: #0065FC;
-    padding-bottom: 10px;
+    padding-bottom: 10px;   
     border-bottom: 2px solid #0065FC;
     border-top: 0;
 }
@@ -779,6 +779,36 @@ footer
 
 }
 
+@media (min-width: 501px) and (max-width: 767px)
+{
+
+.result
+{
+   width: 85%;
+}
+
+.activites
+{
+    width: 85%;
+}
+
+#activites h2
+{
+    margin-left: 8%;
+}
+
+.hebergements h2
+{
+    margin-left: 9%;
+}
+
+.afficher
+{
+    margin-left: 7%;
+}
+
+}
+
 /***************************************************Tablet*********************************************************************/
 
 @media (min-width: 768px) and (max-width: 1000px)
@@ -786,7 +816,7 @@ footer
 
 
 
-/*****************************Filtres******************************/
+/*****************************Filtres_tab******************************/
 
 .filtres
 {
@@ -809,7 +839,7 @@ section
 
 .hebergements
 {
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -877,8 +907,8 @@ aside img
 }
 .activites
 {
-    flex-direction: column;
     width: 90%;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
 }
@@ -896,7 +926,12 @@ aside img
 
 .cont
 {
-    width: 100%;
+    width: 48%;
+}
+
+.fort_frioul
+{
+    order: 2;
 }
 
 }
