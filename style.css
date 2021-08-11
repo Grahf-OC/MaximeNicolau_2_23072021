@@ -33,7 +33,7 @@ h3
     margin: 0;
 }
 
-/***********************************************************Desktop****************************************************************************/
+/******************************************Desktop************************************************/
 
 /**************************************Header*************************************/
 
@@ -92,6 +92,7 @@ nav ul li:hover
 
 /*********************************************************Main*****************************************/
 
+
 /*****************************Recherche**********************************/
 
 .recherche
@@ -99,8 +100,6 @@ nav ul li:hover
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 2.5%;
-    
 }
 
 .recherche h1
@@ -118,7 +117,6 @@ nav ul li:hover
     margin-bottom: 0.5em;
 }
 
-
 .recherche_ensemble
 {
     display: flex;
@@ -130,7 +128,7 @@ nav ul li:hover
 {
     border: 1px;
     background-color: #F2F2F2;
-    padding: 16px 17px;
+    padding: 18px 17px 17px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 45px;
@@ -173,10 +171,9 @@ nav ul li:hover
 .filtres
 {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 1% 2.5%;
+    margin: 1% 0;
 }
 
 .filtres p
@@ -196,7 +193,6 @@ nav ul li:hover
 .bouton_filtres
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
     border-radius: 30px;
     border-style: solid;
@@ -230,7 +226,7 @@ nav ul li:hover
 {
     display: flex;
     align-items: center;
-    margin: 30px 0 30px 2.5%;
+    margin: 30px 0;
 }
 
 /******************************Font Awesome*************************************/ 
@@ -273,6 +269,11 @@ section
 section p
 {
     color: black;
+}
+
+.section1
+{
+    flex-direction: column;
 }
 
 .hebergements h2
@@ -355,7 +356,6 @@ aside a
 {
     width: 90%;
     display: flex;
-    flex-direction: row;
     background-color: white;
     margin: 5px auto 10px auto;
     border-radius: 20px;
@@ -380,6 +380,11 @@ aside a:hover
     justify-content: space-around;
     line-height: 1.5em;
     padding: 8px;
+}
+
+.flex2
+{
+    line-height: 1.1em;
 }
 
 aside img
@@ -456,12 +461,12 @@ aside img
 {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
+    object-fit: cover;
 }
 
 .vieux_port img
 {
     height: 380px;
-    object-fit: cover;
 }
 
 .fort
@@ -472,18 +477,16 @@ aside img
 .fort img
 {
     height: 180px;
-    object-fit: cover;
 }
 
 .frioul img
 {
     height: 120px;
-    object-fit: cover;
 }
+
 .calanques img
 {
     height: 380px;
-    object-fit: cover;
 }
 
 .dame
@@ -494,13 +497,11 @@ aside img
 .dame img
 {
     height: 150px;
-    object-fit: cover;
 }
 
 .parc img
 {
     height: 150px;
-    object-fit: cover;
 }
 
 /***********************************Footer********************************/
@@ -511,8 +512,8 @@ footer
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
-    margin: 20px 0px 0px 0px;
-    padding: 10px 0px 40px 40px;
+    margin-top: 30px;
+    padding: 10px 0px 20px 40px;
 }
 
 footer ul
@@ -545,7 +546,7 @@ footer a
     line-height: 1.7em;
 }
 
-/*********************************************************************Mobile******************************************************/
+/*************************************************************Mobile**********************************************/
 
 @media all and (max-width: 767px)
 {
@@ -608,13 +609,12 @@ nav ul li:hover, nav ul li:focus
 
 .nature
 {
-    margin: 0 5% 1% 5%;
+    margin: 0 5% 1%;
 }
 
 .recherche_ensemble
 {
-    justify-content: flex-start;
-    margin: 2em 2.5%;
+    margin: 20px 2.5%;
 }
 
 .recherche_champ
@@ -633,7 +633,7 @@ nav ul li:hover, nav ul li:focus
     font-size: 1.2em;
     margin-left: -1em;
     color: white;
-    padding: 0.69em;
+    padding: 0.8em;
     border-radius: 30%;
     background-color: #0065FC;
     cursor: pointer;
@@ -646,7 +646,8 @@ nav ul li:hover, nav ul li:focus
     flex-wrap: wrap;
     align-items: baseline;
     width: 95%;
-    margin: 0 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .filtres_titre
@@ -659,6 +660,12 @@ nav ul li:hover, nav ul li:focus
 .bouton_filtres
 {
     margin-bottom: 15px;
+}
+
+.bottom_filtres
+{
+    margin-left: 2.5%;
+    margin-right: auto;
 }
 
 /*******************************************Main_mob**********************************************/
@@ -767,6 +774,7 @@ aside img
 footer
 {
     flex-direction: column;
+    padding: 10px 0px 40px 5%;
 }
 
 .foot_nav
@@ -784,32 +792,42 @@ footer
 
 .result
 {
-   width: 85%;
+   width: 82%;
+}
+
+aside a
+{
+    width: 83%;
 }
 
 .activites
 {
-    width: 85%;
+    width: 82%;
 }
 
 #activites h2
 {
-    margin-left: 8%;
+    margin-left: 9%;
 }
 
 .hebergements h2
 {
-    margin-left: 9%;
+    margin-left: 10%;
 }
 
 .afficher
 {
-    margin-left: 7%;
+    margin-left: 8%;
+}
+
+footer
+{
+    padding: 10px 0px 40px 8%;
 }
 
 }
 
-/***************************************************Tablet*********************************************************************/
+/********************************************Tablet***********************************************************/
 
 @media (min-width: 768px) and (max-width: 1000px)
 {
@@ -818,9 +836,11 @@ footer
 
 /*****************************Filtres_tab******************************/
 
+
 .filtres
 {
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .bouton_filtres
@@ -837,6 +857,11 @@ section
     margin: 0;
 }
 
+.section1
+{
+    margin: 0 2.5%;
+}
+
 .hebergements
 {
     width: 95%;
@@ -850,7 +875,7 @@ section
 
 .hebergements h2
 {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .result img
@@ -935,12 +960,4 @@ aside img
 }
 
 }
-
-
-
-
-
-
-
-
 
