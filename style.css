@@ -431,7 +431,7 @@ aside img
 
 .activites h3
 {
-    font-size: 16px;
+    font-size: 14px;
     padding: 2px 5px 10px 15px;
 }
 
@@ -444,11 +444,12 @@ aside img
 {
     box-shadow: 2px 2px 6px 2px rgb(175, 175, 175);
     border-radius: 20px;
+    margin-bottom: 28px;
 }
 
 .cont
 {
-    width: 22%
+    width: 23%;
 }
 
 .acti:hover
@@ -466,42 +467,32 @@ aside img
 
 .vieux_port img
 {
-    height: 380px;
-}
-
-.fort
-{
-    margin-bottom: 42px;
+    height: 400px;
 }
 
 .fort img
 {
-    height: 180px;
+    height: 210px;
 }
 
 .frioul img
 {
-    height: 120px;
+    height: 135px;
 }
 
 .calanques img
 {
-    height: 380px;
-}
-
-.dame
-{
-    margin-bottom: 42px;
+    height: 400px;
 }
 
 .dame img
 {
-    height: 150px;
+    height: 180px;
 }
 
 .parc img
 {
-    height: 150px;
+    height: 165px;
 }
 
 /***********************************Footer********************************/
